@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="warning">Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="alumnoMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<br><br><br><br>
+
+<ion-content class="ion-padding">
+  <img src="/assets/icon/R.png"/>
+
+  <br><br>
+  <ion-title class="ion-text ion-color-light" style="text-align: center;">¡Hola! {{nombre}}</ion-title>
+  <br><br>
+
+  <ion-button routerLink="/nosotros" expand="full" color="warning" shape="round">
+    Nosotros
+  </ion-button>
+  <ion-button routerLink="/api" expand="full" color="warning" style="margin-top: 10px;" shape="round">
+    Noticias
+  </ion-button>
+  <ion-button routerLink="/scan" expand="full" color="warning" style="margin-top: 10px;" shape="round">
+    Escanear QR
+  </ion-button>
+
+</ion-content>
