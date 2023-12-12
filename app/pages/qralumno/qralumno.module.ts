@@ -15,6 +15,6 @@ import { QralumnoPage } from './qralumno.page';
     IonicModule,
     QralumnoPageRoutingModule
   ],
-  declarations: [QralumnoPage]
+  declarations: []
 })
 export class QralumnoPageModule {}

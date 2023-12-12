@@ -45,19 +45,9 @@ const routes: Routes = [
   {
     path: 'ajustes', component: AjustesComponent},
   {
-    path: 'scan',
-    loadChildren: () => import('./pages/scan/scan.module').then( m => m.ScanPageModule),
-    canActivate: [IngresadoGuard]
-  },
-  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule),
     canActivate: [IngresadoGuard]
-  },
-  {
-    path: 'login-docente',
-    loadChildren: () => import('./pages/login-docente/login-docente.module').then( m => m.LoginDocentePageModule),
-    canActivate: [NoIngresadoGuard]
   },
   {
     path: 'registro-docente',
@@ -65,10 +55,9 @@ const routes: Routes = [
     canActivate: [NoIngresadoGuard]
   },
   {
-    path: 'generar-qr',
-    loadChildren: () => import('./pages/generar-qr/generar-qr.module').then( m => m.GenerarQrPageModule),
-    canActivate: [IngresadoGuard]
-  }
+    path: 'asistencia',
+    loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
 ];
 
 @NgModule({

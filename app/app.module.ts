@@ -14,11 +14,11 @@ import { AjustesComponent } from './ajustes/ajustes.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginPage } from './pages/login/login.page';
-import { QRCodeModule } from 'angularx-qrcode';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { QralumnoPage } from './pages/qralumno/qralumno.page';
 
 @NgModule({
-  declarations: [AppComponent, AjustesComponent],
+  declarations: [AppComponent, AjustesComponent, QralumnoPage],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
@@ -30,8 +30,7 @@ import { QRCodeModule } from 'angularx-qrcode';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    QRCodeModule
-    
+    ZXingScannerModule
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy  },

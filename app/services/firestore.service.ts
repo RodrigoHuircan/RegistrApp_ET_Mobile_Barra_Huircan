@@ -27,4 +27,9 @@ export class FirestoreService {
   updateDoc(path: string, id: string, data: any){
     return this.firestore.collection(path).doc(id).update(data)
   }
+
+  guardarAsistencia(asistenciaData: any) {
+    // La colección 'asistencias' es un ejemplo, cámbiala por el nombre que uses en tu Firestore
+    return this.firestore.collection('Asistencias').add(asistenciaData);
+  }
 }

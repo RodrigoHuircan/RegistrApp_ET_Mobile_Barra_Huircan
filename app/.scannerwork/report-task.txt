@@ -1,0 +1,6 @@
+projectKey=Registrap
+serverUrl=http://localhost:9000
+serverVersion=9.9.3.79811
+dashboardUrl=http://localhost:9000/dashboard?id=Registrap
+ceTaskId=AYwFI49H6YOhejvtN84X
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYwFI49H6YOhejvtN84X

@@ -44,6 +44,11 @@ export class AppComponent {
       name: 'Mi Perfil',
       icon: 'person-outline',
       redirecTo: '/perfil'
+    },
+    {
+      name: 'Asistencias',
+      icon: 'calendar-outline',
+      redirecTo: '/asistencia'
     }
   ];
   login: boolean;
